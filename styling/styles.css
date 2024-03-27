@@ -1,6 +1,9 @@
 :root {
     background-color: hsl(0, 5%, 11%);
+    /* background-color: hwb(240 65% 7%); */
+    font-family: 'Times New Roman', Times, serif;
 }
+
 
 * {
     box-sizing: border-box;
@@ -14,6 +17,12 @@ h1 {
     font-size: 4rem;
     color: #fff;
     margin-bottom: 4rem;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    padding-bottom: 2rem;
 }
 
 h2 {
@@ -60,7 +69,7 @@ h2 {
     text-align: center;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: hsl(0, 5%, 11%);
+    color: hsl(0, 0%, 90%);
     background: linear-gradient(90deg, rgb(18, 92, 255) 0%, rgb(0, 102, 255) 100%);
     border-radius: 4px;
     font-weight: bold;
@@ -91,7 +100,7 @@ h2 {
 .fa-crown {
     font-size: 2.5rem;
     margin-left: 1rem;
-    /* color: rgb(201, 81, 7); */
+    color: rgb(246, 232, 41);
 }
 
 .border {
@@ -175,4 +184,31 @@ input::placeholder {
 /* Leaderboard */
 ul {
     font-size: 2.3rem;
+}
+
+@media (max-width: 768px) and (max-width: 480px) {
+    #play-btn {
+        color: #fff;
+        font-size: 2rem;
+        padding: 2rem;
+        width: 28rem;
+    }
+
+    #btn-play-again,
+    #btn-go-home,
+    #saveScoreBtn,
+    #highscore-btn,
+    #play-btn {
+        color: #fff;
+        font-size: 2rem;
+        padding: 2rem;
+        width: 28rem;
+    }
+
+
+    .fa-crown {
+        font-size: 2.5rem;
+        margin-left: 1rem;
+        color: rgb(246, 232, 41);
+    }
 }

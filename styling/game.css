@@ -1,94 +1,24 @@
-/* body {
-    color: #fff;
-}
-
-.choice-container {
-    display: flex;
-    margin-bottom: 0.8rem;
-    width: 100%;
-    border-radius: 4px;
-    font-size: 3rem;
-    min-width: 80rem;
-    background: rgb(18, 93, 255);
-}
-
-.choice-container:hover {
-    cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(6, 103, 247, 0.5);
-    transform: scale(1.02);
-    transform: transform 100ms;
-}
-
-.choice-prefix {
-    padding: 2rem 2.5rem;
-    color: white;
-}
-
-.choice-text {
-    padding: 2rem;
-    width: 100%;
-}
-
-.correct {
-    background: linear-gradient(32deg, rgba(11, 223, 36)) 0%, rgb(41, 232, 111)100%;
-}
-
-.incorrect {
-    background: linear-gradient(32deg, rgba(230, 29, 29, 1) 0%, rgb(244, 11) 100%);
-}
-
-#hud{
-    display: flex;
-    justify-content: space-between;
-}
-
-.hud-prefix{
-    text-align: center;
-    font-size: 2rem;
-}
-
-.hud-main-text{
-    text-align: center;
-}
-
-#progressBar{
-    width: 20rem;
-    height: 3rem;
-    border: 0.2rem solid rgb(11, 223, 36);
-    margin-top: 2rem;
-    border-radius: 50px;
-    overflow: hidden;
-}
-
-
-#progressBarFull{
-    height: 100%;
-    background:  rgb(11, 223, 36);
-    width: 0%;
-}
-
-@media screen and (max-width: 768px) and (min-width: 480px) {
-    .choice-container {
-        min-width: 20rem;
-    }
-    
-    h1 {
-        font-size: 4rem;
-    }
-} */
-
-/* General styles */
+General styles
 body {
     color: #fff;
 }
 
-.choice-container {
+.choice-container-row {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 0.8rem;
-    width: 100%;
+}
+
+.choice-container {
+    width: calc(50% - 0.4rem); 
+
+    height: 200px; 
     border-radius: 4px;
     font-size: 3rem;
     background: rgb(18, 93, 255);
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
 }
 
 .choice-container:hover {
@@ -104,9 +34,13 @@ body {
 }
 
 .choice-text {
-    padding: 2rem;
+    padding: 6rem;
     width: 100%;
+    text-align: center;
 }
+
+
+
 
 .correct {
     background: linear-gradient(32deg, rgba(11, 223, 36)) 0%, rgb(41, 232, 111)100%;
@@ -121,13 +55,17 @@ body {
     justify-content: space-between;
 }
 
-.hud-prefix {
+.hud-item {
+    flex: 1;
     text-align: center;
+}
+
+.hud-prefix {
     font-size: 2rem;
 }
 
 .hud-main-text {
-    text-align: center;
+    font-size: 3rem;
 }
 
 #progressBar {
@@ -145,6 +83,17 @@ body {
     width: 0%;
 }
 
+.question {
+    display: flex;
+}
+
+.image-with-border {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 0 0 10px;
+    max-width: 100%;
+}
+
 /* Media queries */
 @media screen and (max-width: 768px) {
     .choice-container {
@@ -154,15 +103,21 @@ body {
     h1 {
         font-size: 3.5rem; /* Adjust heading font size for smaller screens */
     }
+
+    .choice-prefix,
+    .choice-text {
+        padding: 4rem; /* Adjust padding for smaller screens */
+    }
+
+    .hud-prefix {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .choice-container {
-        font-size: 2rem; /* Adjust font size for smaller screens */
-    }
-
+    .choice-container,
     h1 {
-        font-size: 3rem; /* Adjust heading font size for smaller screens */
+        font-size: 2rem; /* Adjust font size for smaller screens */
     }
 
     .choice-prefix,

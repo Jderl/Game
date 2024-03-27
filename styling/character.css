@@ -34,6 +34,19 @@ h1 {
     align-items: center;
 }
 
+.image-and-paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Align items vertically */
+}
+
+.image-and-paragraph img {
+    margin-right: 10px;
+}
+
+
+
 .flex-box img {
     width: 100%;
     height: auto;
@@ -56,38 +69,74 @@ p {
 input[type="text"] {
     width: 50%;
     padding: 10px;
-    font-size: 3rem;
-    border: 1px solid white;
+    font-size: 1.8rem;
+    border: 2px solid white;
     border-radius: 5px;
     margin-bottom: 20px;
     background-color: transparent;
     outline: none;
     color: white;
     text-align: center;
-    
+
 
 }
 
+/* style="width: 200px; height: auto; padding-bottom: 3px;" */
+.nurse-img1 {
+    width: 300px;
+    height: auto;
+}
+
+.left-right {
+    display: flex;
+    align-items: center;
+}
+
+.left-right img {
+    margin-left: 20px;
+    /* Adjust margin as needed */
+}
+
+
+
+.outer-border {
+    border: 0.5px solid #faf0f0;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    /* Adjust the height as needed */
+    width: 60%;
+    /* Adjust the width as needed */
+    visibility: visible;
+}
+
+
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
+
+
 .btn-start {
-    border: 1px solid white; 
+    border: 1px solid white;
     border-radius: 4px;
     font-size: 1.5rem;
-    padding: 8px 16px; 
-    background-color: transparent; 
-    color: white; 
+    padding: 8px 16px;
+    background-color: transparent;
+    color: white;
     margin-top: 2rem;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-start:hover {
-    background-color: rgb(6, 161, 76); /* Change background color on hover */
-    color: black; /* Change text color on hover */
+    background-color: rgb(6, 161, 76);
+    color: black;
 }
 
 /* pname */
@@ -100,7 +149,7 @@ span {
 
 
 /* pt-info */
-.pInfo{
+.pInfo {
     text-align: left;
 }
 
@@ -112,24 +161,22 @@ ul li {
     font-size: 2rem;
 }
 
-.btn-game{
-    border: 1px solid white; 
+.btn-game {
+    border: 1px solid white;
     border-radius: 4px;
     font-size: 1.5rem;
-    padding: 8px 16px; 
-    background-color: transparent; 
-    color: white; 
+    padding: 8px 16px;
+    background-color: transparent;
+    color: white;
     margin-top: 2rem;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-game:hover {
-    background-color: rgb(6, 161, 76); /* Change background color on hover */
-    color: black; /* Change text color on hover */
+    background-color: rgb(6, 161, 76);
+    color: black;
 }
-
-
 
 
 /* Media query for mobile devices */
@@ -142,6 +189,57 @@ ul li {
     .flex-box {
         width: calc(50% - 20px);
     }
+
+    input {
+        width: 300px !important;
+        font-size: 1rem
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    .left-right {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .left-right p {
+        margin: 0;
+        font-size: 18px;
+
+    }
+
+    span {
+        font-size: 18px;
+    }
+
+    .left-right img {
+        margin: 0;
+        width: 200px;
+        height: auto;
+    }
+
+    .image-and-paragraph {
+        display: flex;
+        align-items: center;
+        /* Align items vertically */
+    }
+
+    .image-and-paragraph img {
+        margin-right: 10px;
+    }
+
+    .eroom{
+        width: 400px;
+    }
+
+    
+    .image-and-paragraph p {
+       font-size: 1.5rem;
+    }
+
 }
 
 /* Media query for small mobile devices */
@@ -149,4 +247,5 @@ ul li {
     .flex-box {
         width: calc(100% - 20px);
     }
+
 }

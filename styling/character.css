@@ -149,9 +149,32 @@ span {
 
 
 /* pt-info */
-.pInfo {
-    text-align: left;
-}
+.patient-info {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align items to the top */
+  }
+  
+  .container {
+    width: 100%; /* Ensure the container spans the full width */
+    max-width: 1200px; /* Set a maximum width for the container */
+  }
+  
+  .with-image {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between; /* Space evenly between child elements */
+  }
+  
+  .pt-info {
+    flex: 1; /* Allow pt-info to take up remaining space */
+    margin-right: 20px; /* Add margin to create space between pt-info and image */
+  }
+  
+  .chart {
+    width: 300px; /* Keep image width as specified */
+  }
 
 ul {
     margin-top: 1rem;
@@ -168,7 +191,7 @@ ul li {
     padding: 8px 16px;
     background-color: transparent;
     color: white;
-    margin-top: 2rem;
+    margin-top: 15rem;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -179,10 +202,10 @@ ul li {
 }
 
 
-/* Media query for mobile devices */
+/* Media query for tablets and small desktops */
 @media (max-width: 768px) {
+    /* General adjustments */
     h1 {
-        text-align: center;
         font-size: 2.5rem;
     }
 
@@ -190,9 +213,9 @@ ul li {
         width: calc(50% - 20px);
     }
 
-    input {
+    input[type="text"] {
         width: 300px !important;
-        font-size: 1rem
+        font-size: 1rem;
     }
 
     h2 {
@@ -200,6 +223,7 @@ ul li {
         font-weight: 300;
     }
 
+    /* Left-right alignment adjustments */
     .left-right {
         flex-direction: row;
         justify-content: center;
@@ -207,11 +231,6 @@ ul li {
 
     .left-right p {
         margin: 0;
-        font-size: 18px;
-
-    }
-
-    span {
         font-size: 18px;
     }
 
@@ -221,25 +240,24 @@ ul li {
         height: auto;
     }
 
+    /* Image and paragraph alignment */
     .image-and-paragraph {
         display: flex;
         align-items: center;
-        /* Align items vertically */
     }
 
     .image-and-paragraph img {
         margin-right: 10px;
     }
 
-    .eroom{
+    /* Additional adjustments */
+    .eroom {
         width: 400px;
     }
 
-    
     .image-and-paragraph p {
-       font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-
 }
 
 /* Media query for small mobile devices */
@@ -247,5 +265,4 @@ ul li {
     .flex-box {
         width: calc(100% - 20px);
     }
-
 }

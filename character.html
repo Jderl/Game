@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Nursify Quiz App</title>
-    <link rel="stylesheet" href="/styling/styles.css" />
-    <link rel="stylesheet" href="/styling/game.css" />
-    <link rel="stylesheet" href="/styling/character.css" />
-    <link rel="icon" href="/characters/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/game.css" />
+    <link rel="stylesheet" href="/styles/character.css" />
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
 
   </head>
   <body>
@@ -24,9 +24,9 @@
     </div> -->
     <section class="enter-a-name" id="enter-a-name">
       <div class="container">
-        <img src="/characters/nurse.png" alt="character"   class="nurse-img1">
+        <img src="/images/nurse.png" alt="character"   class="nurse-img1">
         <input type="text" id="nameInput" placeholder="Name" required />
-        <h2>Enter Your Name :</h2>
+        <h2>Enter Your Name</h2>
         <a href="#pname" class="btn-start">Start the Game</a>
       </div>
     </section>
@@ -39,7 +39,7 @@
           Hello nurse <span class="playerName"></span>, you are assigned to be the nurse on duty here in (er,opd) department. Your job is to assess the patient/s correctly. Good luck nurse
           <span class="playerName"></span>!
         </p>
-        <img src="/characters/nurse2.png" alt="">
+        <img src="/images/nurse2.png" alt="">
         <a href="#er" class="btn-start">Next</a>
       </div>
     </section> -->
@@ -47,10 +47,10 @@
       <div class="container">
         <div class="left-right">
           <p>
-            Hello nurse <span class="playerName"></span>, you are assigned to be the nurse on duty here in (er,opd) department. Your job is to assess the patient/s correctly. Good luck nurse
+            Hello Nurse <span class="playerName"></span>, you are assigned to be the nurse on duty here in Emergecy Room/Outpatient Department. Your job is to assess the patient(s) correctly. Good luck, nurse!
             <span class="playerName"></span>!
           </p>
-          <img src="/characters/nurse2.png" alt="nurse2" class="nurse2">
+          <img src="/images/nurse2.png" alt="nurse2" class="nurse2">
         </div>
         <a href="#er" class="btn-start">Next</a>
       </div>
@@ -70,7 +70,7 @@
     <section class="er" id="er">
       <div class="container">
         <div class="image-and-paragraph">
-          <img src="/characters/eroom.png" alt="" class="eroom">
+          <img src="/images/eroom.png" alt="" class="eroom">
           <p>You are assigned to the Emergency Department, there are patients waiting for you.</p>
         </div>
         <a href="#pt" class="btn-start">Go to ER</a>
@@ -84,26 +84,26 @@
         <h1>Select A Patient.</h1>
         <div class="character">
           <div class="flex-box">
-            <a href="/character.html" class="character-link">
-              <img src="characters/Ana.png" alt="Ana" />
+            <a href="/game.html" class="character-link">
+              <img src="/images/characters/Ana.png" alt="Ana" />
               <p id="name">Ana</p>
             </a>
           </div>
           <div class="flex-box">
-            <a href="#patient-info" class="character-link">
-              <img src="characters/May.png" alt="May" />
+            <a href="/game.html" class="character-link">
+              <img src="/images/characters/May.png" alt="May" />
               <p id="name">May</p>
             </a>
           </div>
           <div class="flex-box">
-            <a href="#patient-info" class="character-link">
-              <img src="characters/Mark.png" alt="Mark" />
+            <a href="/game.html" class="character-link">
+              <img src="/images/characters/Mark.png" alt="Mark" />
               <p id="name">Mark</p>
             </a>
           </div>
           <div class="flex-box">
-            <a href="#patient-info" class="character-link">
-              <img src="characters/John.png" alt="John" />
+            <a href="/game.html" class="character-link">
+              <img src="/images/characters/John.png" alt="John" />
               <p id="name">John</p>
             </a>
           </div>
@@ -130,7 +130,7 @@
       </div>
     </section> -->
 
-    <section class="patient-info" id="patient-info">
+    <!-- <section class="patient-info" id="patient-info">
       <div class="container">
         <div class="with-image">
           <div class="pt-info">
@@ -145,11 +145,11 @@
               <li>pulses present in lower extremities</li>
             </ul>
           </div>
-          <img src="/characters/chart.png" alt="" style="width: 300px;" class="chart">
+          <img src="/images/chart.png" alt="" style="width: 300px;" class="chart">
           <a href="/game.html" class="btn-game">Click to Continue</a>
         </div>
         </div>
-    </section>
+    </section> -->
     
     <script src="/javascript/character.js"></script>
  
